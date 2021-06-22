@@ -1,0 +1,23 @@
+<mat-card>
+    <mat-card-title> Novo Carro </mat-card-title>
+    <mat-card-content>
+      <mat-form-field >
+        <mat-label for="modelo">Nome</mat-label>
+        <input matInput placeholder="modelo" type="text" name="modelo" [(ngModel)]="modelo" />
+      </mat-form-field>
+
+      <mat-form-field >
+        <mat-label for="placa">Data de nascimento</mat-label>
+        <input matInput placeholder="placa" type="text" name="placa" [(ngModel)]="placa" />
+      </mat-form-field>
+
+      <mat-form-field >
+        <mat-label for="ano">Peso</mat-label>
+        <input matInput placeholder="ano" type="text" name="ano" [(ngModel)]="ano" />
+      </mat-form-field>
+  
+      <mat-card-actions>
+        <button mat-raised-button color="warn" (click)="cadastrar()">Cadastrar</button>
+      </mat-card-actions>
+    </mat-card-content>
+  </mat-card>

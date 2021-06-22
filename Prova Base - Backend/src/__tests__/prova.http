@@ -1,12 +1,12 @@
 ###
-POST http://localhost:1234/classe/cadastrar
+POST http://localhost:1234/carro/cadastrar
 Content-Type: application/json
 
 {
-    "atributo1": "Valor 1",
-    "atributo2": "Valor 2",
-    "atributo3": 1234,
+    "modelo": "teste 2",
+    "placa": "ABC-6521",
+    "ano": 1995
 }
 
 ###
-GET http://localhost:1234/pessoa/listar
+GET http://localhost:1234/carro/listar
