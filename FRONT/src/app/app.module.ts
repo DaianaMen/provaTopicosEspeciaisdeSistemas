@@ -14,9 +14,14 @@ import {MatListModule} from '@angular/material/list';
 import { CadastrarComponent } from './components/views/carro/cadastrar/cadastrar.component';
 import { MatCardModule } from '@angular/material/card';
 import { MatFormFieldModule } from '@angular/material/form-field';
+
+import { MatInputModule } from '@angular/material/input';
 import { FormsModule } from '@angular/forms';
 import { ListarComponent } from './components/views/carro/listar/listar.component';
 import { MatTableModule } from '@angular/material/table';
+import { HttpClientModule } from '@angular/common/http';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+
 
 @NgModule({
   declarations: [
@@ -37,8 +42,11 @@ import { MatTableModule } from '@angular/material/table';
     MatCardModule,
     MatFormFieldModule,
     FormsModule,
-    MatTableModule
-
+    MatTableModule,
+    HttpClientModule,
+    MatSnackBarModule,
+    MatInputModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

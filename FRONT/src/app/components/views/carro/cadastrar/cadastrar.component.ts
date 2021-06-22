@@ -25,7 +25,7 @@ export class CadastrarComponent implements OnInit {
     carro.modelo = this.modelo;
     carro.placa = this.placa
     carro.ano = Number.parseInt(this.ano);
-    this.service.cadastrar(carro).subscribe(() => {
+    this.service.cadastrar(carro).subscribe((carro) => {
       console.log(carro);
       this.snack.open("Carro Cadastrado", "", {
         duration: 3000,
